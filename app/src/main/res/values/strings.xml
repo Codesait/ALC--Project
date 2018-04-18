@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tic tac toe game</string>
+    <string name="friend">Multi player</string>
+    <string name="exit">Exit</string>
+    <string name="single">Single</string>
+    <string name="start">Start</string>
+    <string name="human">Human :</string>
+    <string name="computer">A I :</string>
+    <string name="play">Play With</string>
+    <string name="player1">Player1 :</string>
+    <string name="player2">Player2 :</string>
+    <string name="b1">o</string>
+    <string name="b2">x</string>
+    <string name="b3">o</string>
+    <string name="vs">vs</string>
+    <string name="restart">NEW GAME</string>
+</resources>

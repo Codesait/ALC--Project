@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context="com.example.chiamaka.tictactoegame.easywithfriend">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/big"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame"
+            android:id="@+id/main"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/main">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:text="@string/b1"
+                android:background="@drawable/ticbutton"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:text="@string/b2"
+                android:background="@drawable/ticbutton"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:text="@string/b3"
+                android:background="@drawable/ticbutton"
+                android:textSize="70sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tableRow1">
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:text="@string/b1"
+                android:background="@drawable/ticbutton"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:text="@string/b2"
+                android:background="@drawable/ticbutton"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:text="@string/b3"
+                android:background="@drawable/ticbutton"
+                android:textSize="70sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tableRow2">
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:text="@string/b1"
+                android:background="@drawable/ticbutton"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:text="@string/b2"
+                android:background="@drawable/ticbutton"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:text="@string/b3"
+                android:background="@drawable/ticbutton"
+                android:textSize="70sp" />
+        </TableRow>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/big"
+        android:background="#e2b729"
+        android:layout_margin="5dp"
+        android:id="@+id/NEWGAME"
+        android:text="@string/restart">
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:background="#e78a11">
+            <TextView
+                android:id="@+id/human"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player1"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/humanCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_centerInParent="true"
+            android:textColor="#102c91"
+            android:paddingBottom="2dp"
+            android:text="@string/vs"/>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:background="#e78a11">
+            <TextView
+                android:id="@+id/computer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player2"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/androidCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
